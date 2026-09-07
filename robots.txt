@@ -1,7 +1,6 @@
-# Winners Mark — winnersmarkbowling.com
-# Single-page site: everything lives at /, so there's nothing to disallow.
-# The sitemap line is what Bing and Google look for to find the sitemap
-# without being told about it separately.
+# Winners Mark - winnersmarkbowling.com
+# Nothing here is private, so everything is crawlable. The Sitemap line is
+# how Bing and Google find the sitemap without being told separately.
 
 User-agent: *
 Allow: /

@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Winners Mark. One page, so one URL. Update <lastmod> when the page
-     changes meaningfully - it tells crawlers whether a re-crawl is worth it. -->
+<!-- Winners Mark. Update <lastmod> on a page when its content actually
+     changes - it tells crawlers whether a re-crawl is worth their time.
+     Every URL here uses the bare apex domain to match the CNAME file; a
+     sitemap listing www URLs under an apex-verified property is rejected. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://winnersmarkbowling.com/</loc>
     <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://winnersmarkbowling.com/services.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://winnersmarkbowling.com/visit.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://winnersmarkbowling.com/meet-matt.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://winnersmarkbowling.com/privacy.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://winnersmarkbowling.com/terms.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
 </urlset>
