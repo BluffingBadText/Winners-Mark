@@ -117,6 +117,8 @@ a{color:inherit; text-decoration:none;}
 .visit-cta{margin-top:30px; display:flex; gap:12px; flex-wrap:wrap;}
 .visit-map{background:repeating-linear-gradient(90deg, var(--ink) 0 2px, transparent 2px 46px), var(--ink-2); position:relative; min-height:320px; display:flex; align-items:center; justify-content:center;}
 .map-pin{display:flex; flex-direction:column; align-items:center; gap:10px; color:var(--chalk);}
+.visit-map{overflow:hidden; min-height:320px;}
+.visit-map iframe{border-radius:inherit;}
 .map-pin svg{width:44px; height:44px;}
 .map-pin span{font-family:'Space Mono', monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(250,246,236,0.55);}
 footer{background:var(--ink); color:rgba(250,246,236,0.55);}
@@ -134,6 +136,7 @@ footer{background:var(--ink); color:rgba(250,246,236,0.55);}
 {
   "@context": "https://schema.org",
   "@type": "SportingGoodsStore",
+  "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJj9D2dn2NUocRl3LZC09hrdU",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Winners Mark pro shop services",
@@ -319,8 +322,8 @@ footer{background:var(--ink); color:rgba(250,246,236,0.55);}
   <div class="why-inner">
     <div>
       <div class="section-eyebrow" style="color:var(--amber);">Why Winners Mark</div>
-      <h2>Formerly Winners Mark.<br>Still Winners Mark.</h2>
-      <p style="margin-top:16px; color:rgba(250,246,236,0.6); font-size:15px; line-height:1.6;">Same name Taylorsville bowlers have trusted for years, now backed by High Tech Bowling Pro Shop.</p>
+      <h2>Local experience.<br>Personal service.</h2>
+      <p style="margin-top:16px; color:rgba(250,246,236,0.6); font-size:15px; line-height:1.6;">Winners Mark is an independent bowling pro shop inside Valley Lanes in Taylorsville. Matt personally handles every ball fitting and drilling &mdash; the same person measures your hand, picks your layout, and drills the ball.</p>
     </div>
     <div class="why-list">
       <div class="why-item"><div class="why-num">01</div><div><h4>Same-day turnaround</h4><p>Most drilling and resurfacing jobs are ready before your next league night.</p></div></div>
@@ -349,15 +352,17 @@ footer{background:var(--ink); color:rgba(250,246,236,0.55);}
           <div><div class="info-label">Phone</div><div class="info-val mono">(801) 808-6820</div></div>
         </div>
         <div class="visit-cta">
-          <a href="#" class="btn" style="background:var(--red); color:var(--chalk);">Get directions</a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Winners+Mark%2C+3951+W+5400+S%2C+Taylorsville%2C+UT+84120&destination_place_id=ChIJj9D2dn2NUocRl3LZC09hrdU" target="_blank" rel="noopener" class="btn" style="background:var(--red); color:var(--chalk);">Get directions</a>
           <a href="tel:18018086820" class="btn btn-outline">Call now</a>
         </div>
       </div>
       <div class="visit-map">
-        <div class="map-pin">
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5" fill="var(--red)" stroke="none"/></svg>
-          <span>Google Maps embed goes here</span>
-        </div>
+        <iframe
+          title="Map to Winners Mark bowling pro shop, inside Valley Lanes, 3951 W 5400 S, Taylorsville, UT 84120"
+          src="https://maps.google.com/maps?q=3951%20W%205400%20S%2C%20Taylorsville%2C%20UT%2084120&amp;z=15&amp;output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          style="border:0; width:100%; height:100%; min-height:320px; display:block;"
+          allowfullscreen></iframe>
       </div>
     </div>
   </div>
