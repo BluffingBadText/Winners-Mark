@@ -3,7 +3,7 @@
      changes meaningfully - it tells crawlers whether a re-crawl is worth it. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.winnersmarkbowling.com/</loc>
+    <loc>https://winnersmarkbowling.com/</loc>
     <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>

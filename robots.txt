@@ -6,4 +6,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.winnersmarkbowling.com/sitemap.xml
+Sitemap: https://winnersmarkbowling.com/sitemap.xml
